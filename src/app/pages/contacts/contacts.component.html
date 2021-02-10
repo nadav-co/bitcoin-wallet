@@ -1,0 +1,5 @@
+<div class="contacts">
+    <input type="text" [(ngModel)]=filterBy placeholder="Search" (input)="loadContacts()">
+    <contacts-list [contacts]="contacts"></contacts-list>
+    <button class="add-user" (click)="goTo('edit/contact')"><img src="../../../assets/img/add_circle-24px.svg" alt=""></button>
+</div>

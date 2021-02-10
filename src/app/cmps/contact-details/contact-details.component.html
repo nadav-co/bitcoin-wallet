@@ -1,0 +1,19 @@
+<div class="contact-details">
+    <header class="flex space-bt">
+        <button class="clean-btn" (click)="goTo('/contact')"><img class="icon" src="../../../assets/img/arrow_back-24px.svg" alt=""></button>
+        <button class="clean-btn" (click)="goTo('/edit/contact/' + contact._id)"><img class="icon" src="../../../assets/img/create-24px.svg" alt=""></button>
+    </header>
+    <main>
+        <section class="flex col center">
+            <img src="../../../assets/img/contact.png" alt="">
+            <h2>{{contact.name}}</h2>
+            <h3>{{contact.phone}}</h3>
+            <h3>{{contact.email}}</h3>
+        </section>
+        <section class=" transfer flex center">
+            <input [(ngModel)]=amount type="number" placeholder="Amount">
+            <button class="pink-btn" (click)="onTransfer()">Transfer</button>
+        </section>
+        <move-list [moves]="moves"></move-list>
+    </main>
+</div>

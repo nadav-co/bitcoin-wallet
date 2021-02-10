@@ -1,0 +1,14 @@
+.moves-container {
+    max-height: calc(100vh - 700px);
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+}
+::-webkit-scrollbar-track {
+    margin-top: 10px;
+}
